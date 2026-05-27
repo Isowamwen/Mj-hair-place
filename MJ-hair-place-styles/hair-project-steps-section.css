@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+.section5-main{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(4rem, 5vw, 6.4rem) 0;
+      flex-direction: column;
+      width:100%;
+}
+
+.section5-container{
+  width:90%;
+  justify-content: center;
+  
+  display:flex;
+  flex-direction: column;
+  gap:4.8rem;
+  height:100%;
+}
+
+.section5-header{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:clamp(2.5rem, 5vw, 3.2rem);
+}
+.hair-pick-img-container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.hair-pick-image-container{
+  width:50px;
+}
+
+.section5-title-container{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+}
+
+.section5-title-text{
+  
+  font-family: Cormorant Garamond;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight:500;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1); 
+}
+
+.section5-content-container{
+  width: 100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+.section5-image-container{
+  width:clamp(20rem, 50vw, 40rem);
+  height:100%
+}
+.section5-content-image{
+  object-fit: cover;
+  width:100%;
+}
+.section5-stepguide-container{
+  width:100%;
+  display:flex;
+  gap:clamp(2.8rem, 5vw, 4.8rem);
+  align-items: flex-start;
+}
+
+.steps{
+  display:flex;
+  flex-direction: column;
+  
+  gap:2rem;
+}
+
+.step-index{
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 3vw, 3.6rem);
+  font-style: italic;
+  color:rgba(0, 0, 0, 1);
+}
+
+.step-title{
+  font-family: inter;
+  font-weight: 500;
+  font-size: 2rem;
+  
+  color: rgba(0, 0, 0, 1);
+}
+
+.title-desc{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color:rgba(0, 0, 0, 1);
+}
+
+.booking-container{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  padding:clamp(2.4rem 5vw 3.2rem) 0;
+}
+
+.btn-booking{
+  background-color: transparent;
+  
+  position:relative;
+  padding:4px 0;
+}
+.btn-booking::after {
+  content:'';
+  position: absolute;
+  width:100%;
+  height:2px;
+  bottom: 0;
+  left:0; 
+  /* position: absolute; bottom: 0; left: 0; width: 100%; height: 2px — places a full-width line at the bottom of the button*/
+  background-color: rgba(0, 0, 0, 1);
+  transform:scaleX(0);
+  /*hides the line by  squishing it flat*/
+  transform-origin:left;
+  /* controls where the animation starts from (left, center, or right)*/
+  transition: transform 0.3s ease-out;
+  /*animates the reveal smoothly*/
+}
+.btn-booking:hover::after{
+  transform: scaleX(1);
+    /*triggers the animation on hover*/
+  transform-origin: bottom left;
+}
+.booking-text{
+  font-family: inter;
+  font-size:1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:rgba(0, 0, 0, 1);
+}
+
+
+@media (max-width: 706px){
+  .hair-pick-image-container{
+    width:35px;
+  }
+  .section5-stepguide-container{
+    flex-direction: column;
+  }
+  .section5-stepguide-container{
+    width:80%;
+  }
+
+  .booking-container{
+    justify-content: flex-start;
+  }
+  
+}

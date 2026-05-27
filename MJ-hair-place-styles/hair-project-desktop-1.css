@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+
+.collection-container{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.collection-content-container{
+  padding:6rem 0;
+  width:85%;
+  
+  
+  display:flex;
+  flex-direction: column;
+  gap:clamp(2.4rem, 5vw, 4.8rem);
+}
+
+.desktop1-header{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.feather-image-container{
+  
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:100%;
+  
+  
+}
+
+.twemoji-feather-image{
+  width:50px;
+  object-fit: cover;
+}
+
+.desktop1-title-container{
+  display:flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  padding:3rem 0;
+}
+
+.desktop1-title{
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: clamp(2.8rem, 6vw, 3.2rem);
+  font-style: light;
+  color: rgba(164, 121, 95, 1);
+}
+.seemore-btn{
+  background-color: transparent;
+  position:relative;
+  padding:4px 0;
+  cursor:pointer;
+}
+
+.seemore-btn::after {
+        content:'';
+        position: absolute;
+        width:100%;
+        height:2px;
+        bottom: 0;
+        left:0; 
+        /* position: absolute; bottom: 0; left: 0; width: 100%; height: 2px — places a full-width line at the bottom of the button*/
+        background-color: rgba(0, 0, 0, 1);
+        transform:scaleX(0);
+        /*hides the line by  squishing it flat*/
+        transform-origin:left;
+        /* controls where the animation starts from (left, center, or right)*/
+        transition: transform 0.3s ease-out;
+        /*animates the reveal smoothly*/
+      }
+      .seemore-btn:hover::after{
+        transform: scaleX(1);
+         /*triggers the animation on hover*/
+        transform-origin: bottom left;
+      }
+ 
+
+.btn-text-seemore{
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.6rem;
+        
+  color:rgba(0, 0, 0, 1);
+}
+
+.desktop1-content{
+  
+  width:100%;
+  height:100%;
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop1-image-container{
+  width:85%;
+  height:100%;  
+}
+
+.desktop1-image{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+}
+
+.desktop1-subtitle-container{  
+  width:85%;
+}
+
+.desktop1-subtitle1{
+  font-family:Libre Baskerville;
+  font-weight:400;
+  font-style: regular;
+  font-size: clamp(2.8rem, 5vw, 3.2rem);
+  color: rgba(0, 0, 0, 1);
+  padding-top: 3rem;
+
+}
+
+.desktop1-subtitle2{
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
+}
+
+
+
+@media (max-width: 1190px){
+  .desktop1-image-container{
+  width:95%;
+  }
+
+  .desktop1-subtitle-container{
+    width:95%;
+  }
+}
+
+@media (max-width: 950px){
+  .desktop1-image-container{
+  width:100%;
+  }
+
+  .desktop1-subtitle-container{
+    width:100%;
+  }
+}
+
+@media (max-width: 806px){
+  .desktop1-title-container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2.8rem;
+  }
+  
+  .twemoji-feather-image{
+  width:35px;
+  }
+
+  
+}

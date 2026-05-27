@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+.maintainance-section{
+  width:100%;
+  
+  display:flex;
+  flex-direction: column;
+  gap:4.8rem;
+  background-color: rgba(164, 121, 95, 1);
+  
+  padding:5.0rem 0;
+  
+}
+
+.section4-header-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:4.8rem;
+  
+}
+
+.shell-image-container{
+  width:50px;
+  
+}
+
+.shell-image{
+  object-fit: cover;
+  width:100%;
+}
+.section-title{
+  display:flex;
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-style: light;
+  color: rgba(255, 255, 255, 1);
+  padding-left:2rem;
+}
+
+.gallery-grid-container{
+  position: relative;
+  display:grid;
+  flex:1;
+  height:100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  aspect-ratio: 4 / 3;
+  width:100%;
+  overflow:hidden;
+  
+  
+}
+
+.gallery-grid-image{
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit: cover;
+  z-index:1;
+}
+.gallery-grid-2{
+  
+  z-index:2;
+  width:70%;
+  background-color:rgba(164, 121, 95, 1);
+}
+
+.gallery-grid-3{
+  
+  z-index:2;
+}
+.grid-box3-image{
+  width:100%;
+  object-fit: cover;
+}
+.gallery-grid-4{
+  
+  z-index:2;
+  width:70%;
+  background-color:rgba(164, 121, 95, 1);
+}
+.gallery-grid-5{
+  
+  z-index:2;
+  width:70%;
+}
+.grid-box5-image{
+  width:100%;
+  object-fit: cover;
+}
+
+.gallery-grid-7{
+  
+  z-index:2;
+  width:100%;
+  background-color: rgba(208, 228, 255, 1);
+}
+.gallery-grid-10{
+  
+  z-index:2;
+  
+}
+.grid-box10-image{
+  width:100%;
+  object-fit: cover;
+}
+.gallery-grid-11{
+  
+  z-index:2;
+  width:100%;
+  
+}
+
+.grid-box11-image{
+  width:100%;
+  height:100%;
+  
+  
+}
+.bottom-section-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  padding-left:2rem;
+}
+
+.btn-section4{
+  
+  background-color: transparent;
+   position:relative;
+  font-family: inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color:rgba(255, 255, 255, 1);
+  cursor:pointer;
+}
+
+.btn-section4::after {
+        content:'';
+        position: absolute;
+        width:100%;
+        height:2px;
+        bottom: 0;
+        left:0; 
+        /* position: absolute; bottom: 0; left: 0; width: 100%; height: 2px — places a full-width line at the bottom of the button*/
+        background-color: rgba(255, 255, 255, 1);
+        transform:scaleX(0);
+        /*hides the line by  squishing it flat*/
+        transform-origin:left;
+        /* controls where the animation starts from (left, center, or right)*/
+        transition: transform 0.3s ease-out;
+        /*animates the reveal smoothly*/
+      }
+      .btn-section4:hover::after{
+        transform: scaleX(1);
+         /*triggers the animation on hover*/
+        transform-origin: bottom left;
+      }
+
+
+@media (max-width: 806px){
+  .section-title{
+    align-items: flex-start;
+  }
+
+  .bottom-section-container{
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .shell-image-container{
+  width:35px;
+  
+}
+}

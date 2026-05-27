@@ -1,0 +1,40 @@
+html{
+        font-size: 62.5%; 
+      }
+
+      * {
+        margin: 0;
+        padding:0;
+      }
+
+      .body{
+        margin:0;
+        padding:0;
+        font-family: 1.6rem;
+        font-weight: 400;
+        overflow-x: hidden; 
+        
+      }
+
+      .section{
+        padding: clamp(4.8rem, 6vw, 6.4rem) clamp(2.4rem, 6vw, 3.8rem);
+        display:flex;
+        width: 100%;
+        max-width: var(--container-max-width--);
+      }
+
+      main{
+        overflow-x: hidden;
+      }
+      button{
+        border:none;
+        cursor: pointer;
+      }
+
+      img{
+        max-width:100%;
+        display:block;
+      }
+
+      
+     
