@@ -6,9 +6,9 @@
         display: flex;
         justify-content: center;    
         /* White with 50% opacity */
-        background-color: rgba(var(--color__bg--1), 0.05); 
+        background-color: rgba(0, 0, 0, 0.8); /* Darker for readability */ 
         /* Frosted glass effect */
-        backdrop-filter: blur(6px); 
+        backdrop-filter: blur(0.5px); 
         
         top:0;
         width:100%;
@@ -18,14 +18,14 @@
         display:flex;
         justify-content: space-between;
         width:100%;
-        
         align-items: center;
-        padding:0 6.5rem;
+        padding: 0 clamp(3.0rem, 3vh, 6.4rem);
+        height:100%;
       }
 
       .nav-brand{
       display:flex;
-      justify-content: space-between;
+      justify-content:space-between;
       font-family: Cormorant Garamond;
       font-style: bold;
       font-size:2.4rem;
@@ -91,6 +91,10 @@
         display:none;
         list-style: none;
       }
+
+      
+
+
 
       
 

@@ -226,15 +226,17 @@
       }    
      .menu {
         display: none; /* Keep it hidden until checked */
-        position: absolute;
-        top: 100%; /* Positions it right below the header */
+        position: fixed;
+        top: 6.5rem; /* Positions it right below the header */
         right: 0;
+        height: calc(100vh - 6.5rem);
         width: 200px; /* Or 100vw for full width */
         background-color: rgba(0, 0, 0, 0.8); /* Darker for readability */
         backdrop-filter: blur(10px);
         flex-direction: column;
         padding: 2rem;
         list-style: none;
+        
       }
       .menu li {
         margin: 1rem 0;
