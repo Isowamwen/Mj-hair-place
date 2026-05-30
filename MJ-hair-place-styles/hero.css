@@ -58,7 +58,7 @@
         color:rgba(255, 255, 255, 1);
         font-family: Libre Baskerville;
         font-weight: 400;
-        font-size: clamp(0.9rem, 2.5vw, 1.6rem);
+        font-size: clamp(0.9rem, 3vw, 1.6rem);
         max-width: 65.0rem;
         margin-bottom:0;
       }
@@ -123,14 +123,14 @@
         font-family: Inter;
         font-weight: 400;
         font-style: Regular;
-        font-size: 1.6rem;
+        font-size: clamp(0.9rem, 3vw, 1.6rem);
         color:rgba(255, 255, 255, 1);
       }
       .btn-text2{
         font-family: Inter;
         font-weight: 400;
         font-style: Regular;
-        font-size: 1.6rem;
+        font-size: clamp(0.9rem, 3vw, 1.6rem);
         color:rgba(255, 255, 255, 0.5)
       }
 
@@ -148,14 +148,14 @@
         font-family:Libre Baskerville;
         font-weight:400;
         font-style: regular;
-        font-size: 1.6rem;
+        font-size: clamp(0.9rem, 3vw, 1.6rem);
         color:rgba(255, 255, 255, 1);
       }
       .hero-collection-name{
         font-family:Libre Baskerville;
         font-weight:400;
         font-style: regular;
-        font-size: 1.6rem;
+        font-size:clamp(0.9rem, 3vw, 1.6rem);
         color: rgba(199, 195, 192, 1);
       }
         
@@ -185,7 +185,7 @@
         font-family: Inter;
         font-weight: 400;
         font-style: Regular;
-        font-size: 1.2rem;
+        font-size: clamp(0.6rem, 2.5vw, 1.2rem);
         color: rgba(199, 195, 192, 1);
       }
 
