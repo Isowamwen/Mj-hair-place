@@ -40,23 +40,29 @@
       .nav-list{
         display:flex;
         gap:4.8rem;
-        
+        height:100%;
+        align-items: center;
       }
 
       a{
+        display:flex;
         text-decoration: none;
         font-family: inter;
         font-size: 1.4rem;
         font-weight: 500;
         font-style: medium;
-        line-height: 24px;
-        color: rgba(255, 255, 255, 0.8);
-        
+        height:100%;
+        align-items: center;
+        width:100%;
+        color: rgba(255, 255, 255, 0.8);      
       }
 
+      a:hover{
+        opacity: 0.4;
+      }
 
       .menu-toggle{
-        /* hide the actual checkbox from view*/
+        /* hde the actual checkbox from view*/
         display:none;
       }
 

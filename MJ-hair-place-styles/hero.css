@@ -236,7 +236,7 @@
         flex-direction: column;
         padding: 2rem;
         list-style: none;
-        
+        transition: 0.75s ease-out;
       }
       .menu li {
         margin: 1rem 0;
