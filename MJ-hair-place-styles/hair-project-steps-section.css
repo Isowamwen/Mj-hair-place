@@ -98,7 +98,7 @@
 .step-title{
   font-family: inter;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
   
   color: rgba(0, 0, 0, 1);
 }
@@ -153,16 +153,15 @@
 }
 
 
-@media (max-width: 706px){
+@media (max-width: 806px){
   .hair-pick-image-container{
     width:35px;
   }
   .section5-stepguide-container{
     flex-direction: column;
-  }
-  .section5-stepguide-container{
     width:80%;
   }
+  
 
   .booking-container{
     justify-content: flex-start;

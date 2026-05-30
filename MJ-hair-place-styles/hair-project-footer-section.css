@@ -14,7 +14,7 @@ ul{
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: clamp(4rem, 5vw, 6.4rem) clamp(4rem, 5vw, 6.4rem);
+  padding: clamp(4rem, 5vw, 6.4rem) clamp(2.4rem, 5vw, 6.4rem);
   flex-direction: column;
   width:100%; 
   gap:4.8rem;
@@ -38,12 +38,14 @@ ul{
   display: flex;
   align-items:flex-start;
   gap:clamp(3.2rem, 6vw, 6rem);
+  width: 100%;
 }
 
 .footer-column{
   display: flex;
   flex-direction: column;
   gap:2.8rem;
+  width:100%;
 }
 
 .footer-title{
@@ -51,7 +53,7 @@ ul{
   font-weight: 500;
   color:rgba(255, 255, 255, 1);
   font-style: medium;
-  font-size:2rem;
+  font-size:1.8rem;
 }
 
 .footer-list{
@@ -78,7 +80,7 @@ ul{
   font-weight: 500;
   color:rgba(255, 255, 255, 1);
   font-style: medium;
-  font-size:2rem;
+  font-size:1.8rem;
 }
 
 .subcribe-section{
@@ -104,7 +106,7 @@ ul{
 .signature-img-container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-bottom-container{
@@ -119,5 +121,15 @@ ul{
 @media (max-width: 806px){
   .footer-content{
     flex-direction: column;
+  }
+
+  .footer-right-section{
+    align-items: flex-start;
+    width:100%;
+  }
+  
+  .signature-img-container{
+    width:100%;
+    justify-content: flex-start;
   }
 }
